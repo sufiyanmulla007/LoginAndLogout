@@ -37,10 +37,10 @@ const LoginApi = () => {
 
   return (
     <>
-    <div className="App">
+    <div className="container">
       Email: <input type="text" value={email} onChange={handleEmail} /> <br />
       Password: <input type="password" value={password} onChange={handlePassword} /> <br />
-      <button onClick={handleApi}>Login</button>
+      <button className="btn" onClick={handleApi}>Login</button>
       </div>
     </>
   );
