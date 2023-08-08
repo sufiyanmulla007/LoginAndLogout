@@ -22,8 +22,9 @@ const Home = () => {
 //sepeech recognition End
   return (
     <>
-      <button onClick={userlogout}>logout</button>
+      
       <div className="container">
+      <button className="btns-logout" onClick={userlogout}>logout</button>
         <h2>Speech to Text Converter</h2>
         <br />
         <p>
