@@ -38,9 +38,13 @@ const LoginApi = () => {
   return (
     <>
     <div className="container">
-      Email: <input type="text" value={email} onChange={handleEmail} /> <br />
-      Password: <input type="password" value={password} onChange={handlePassword} /> <br />
-      <button className="btn" onClick={handleApi}>Login</button>
+      <div className="main-content">
+      <label>email</label><br></br>
+      <input type="text" value={email} onChange={handleEmail} /> <br />
+      <label>Password</label><br></br>
+      <input type="password" value={password} onChange={handlePassword} /> <br />
+      <button className="sub" onClick={handleApi}>Login</button>
+      </div>
       </div>
     </>
   );
