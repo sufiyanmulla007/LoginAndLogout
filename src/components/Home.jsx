@@ -14,12 +14,12 @@ const Home = () => {
   };
   // speech recognition
   const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
-  const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
+  const { transcript, browserSupportsSpeechRecognition} = useSpeechRecognition();
   
   if (!browserSupportsSpeechRecognition) {
     return null
 }
-//sepeech recognition end
+//sepeech recognition End
   return (
     <>
       <button onClick={userlogout}>logout</button>
@@ -35,11 +35,10 @@ const Home = () => {
         </div>
         <div className="btn-style">
           <button className="btns" >
-          {/* {isCopied ? "Copied!" : "Copy to clipboard"} */}
           Copy
           </button>
-          <button className="btns" onClick={startListening}>Start Listening</button>
-          <button className="btns" onClick={SpeechRecognition.stopListening}>
+          <button className="btns"onClick={startListening} >Start Listening</button>
+          <button className="btns" onClick={SpeechRecognition.stopListening} >
           Stop Listening
           </button>
         </div>
